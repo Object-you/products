@@ -3,9 +3,146 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/swiper-bundle.css" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				font-size: 0;
+			}
+
+			.beijing {
+				padding-top: 5vh;
+			}
+
+			.header {
+				background-color: black;
+				width: 100%;
+				position: fixed;
+				top: 0;
+				height: 5vh;
+				text-align: center;
+				color: #fff;
+				line-height: 60px;
+				font-size: 24px;
+			}
+
+			.swiper-container {
+				width: 100%;
+				height: 95vh;
+			}
+
+			.swiper-slide {
+				height: 100vh;
+				background-color: #007AFF;
+				overflow: hidden;
+			}
+			.swiper-slide >h1{
+				flex-basis: 1;
+				
+			}
+			.cont_cont{
+				width: 500px;
+				height: 100%;
+				background-color: #FFFFFF;
+				margin: 0 auto;
+			}
+			.cont {
+				height: 100%;
+			}
+			.slide1{
+				background-color: #FB7299;
+			}
+			.slide3{
+				background-color: #F7F8F3;
+			
+			}
+			.slide3 img{
+					border: 20px #9e9e9e solid !important;
+					
+			}
+			.slide3>h1{
+				color: #000000;
+			}
+			
+			.title{
+				font-size: 60px;
+				color: #fff;
+				text-align: center;
+				margin-top: 180px;
+			}
+			.blbl{
+				border: 20px #fff solid;
+				margin:  100px auto;
+				display: block;
+				border-radius: 10px;
+			}
+			.smtitle{
+				font-size: 40px;
+				color: #fff;
+				text-align: center;
+				margin-top: 40px;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>new</h1>
-		<h1>更新</h1>
+		<div class="beijing">
+			<div class="header">张之金的个人作品集</div>
+			<div class="cont">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide slide1">
+							<h1 class="title">哔哩哔哩</h1>
+							<h1 class="smtitle">手机端页面</h1>
+						<a href="./blbl/index.html"><img src="./image/blbl.png" alt="" class="blbl"></a>
+							
+						</div>
+						
+							<div class="swiper-slide slide2">
+								<h1 class="title" >三只松鼠</h1>
+								<h1 class="smtitle">PC端页面,手机请横屏</h1>
+							<a href="./szss/index.html"><img src="./image/szss.png" alt="" class="blbl" width="90%" style="margin-top: 300px;"></a>
+								
+							</div>
+						<div class="swiper-slide slide3">
+							<h1 class="title" >书亦烧仙草</h1>
+							<h1 class="smtitle">PC端页面,手机请横屏</h1>
+						<a href="./szss/sysxc.html"><img src="./image/sysxc.png" alt="" class="blbl" width="90%" style="margin-top: 300px;"></a>
+							
+						</div>
+					</div>
+
+					<!-- 如果需要滚动条 -->
+					<div class="swiper-scrollbar"></div>
+				</div>
+
+
+			</div>
+		</div>
+		<script src="js/swiper-bundle.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'vertical', // 垂直切换选项
+				loop: true, // 循环模式选项
+
+				// 如果需要分页器
+				pagination: {
+					el: '.swiper-pagination',
+				},
+
+				// 如果需要前进后退按钮
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+
+				// 如果需要滚动条
+				scrollbar: {
+					el: '.swiper-scrollbar',
+				},
+			})
+		</script>
+
+
 	</body>
 </html>
